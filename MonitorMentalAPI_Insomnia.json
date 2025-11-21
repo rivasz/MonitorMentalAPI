@@ -1,0 +1,244 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-11-12T18:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2025.0.0",
+  "resources": [
+    {
+      "_id": "wrk_mentalmonitoringapi_v2",
+      "parentId": null,
+      "modified": 0,
+      "created": 0,
+      "name": "Mental Monitoring API (Completo)",
+      "_type": "workspace"
+    },
+
+    {
+      "_id": "fld_pacientes",
+      "parentId": "wrk_mentalmonitoringapi_v2",
+      "name": "Pacientes",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_get_pacientes",
+      "parentId": "fld_pacientes",
+      "name": "GET - Listar todos os pacientes",
+      "url": "http://localhost:8080/api/pacientes",
+      "method": "GET",
+      "_type": "request"
+    },
+    {
+      "_id": "req_get_paciente_id",
+      "parentId": "fld_pacientes",
+      "name": "GET - Buscar paciente por ID",
+      "url": "http://localhost:8080/api/pacientes/1",
+      "method": "GET",
+      "_type": "request"
+    },
+    {
+      "_id": "req_post_paciente",
+      "parentId": "fld_pacientes",
+      "name": "POST - Criar paciente",
+      "url": "http://localhost:8080/api/pacientes",
+      "method": "POST",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Ana Souza\",\n  \"email\": \"ana.souza@example.com\",\n  \"dataNascimento\": \"1990-05-10\"\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_put_paciente",
+      "parentId": "fld_pacientes",
+      "name": "PUT - Atualizar paciente",
+      "url": "http://localhost:8080/api/pacientes/1",
+      "method": "PUT",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Ana Souza Atualizada\",\n  \"email\": \"ana.souza@example.com\",\n  \"dataNascimento\": \"1991-06-15\"\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_delete_paciente",
+      "parentId": "fld_pacientes",
+      "name": "DELETE - Remover paciente",
+      "url": "http://localhost:8080/api/pacientes/1",
+      "method": "DELETE",
+      "_type": "request"
+    },
+
+    {
+      "_id": "fld_profissionais",
+      "parentId": "wrk_mentalmonitoringapi_v2",
+      "name": "Profissionais de Saúde",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_get_profissionais",
+      "parentId": "fld_profissionais",
+      "name": "GET - Listar profissionais",
+      "url": "http://localhost:8080/api/profissionais",
+      "method": "GET",
+      "_type": "request"
+    },
+    {
+      "_id": "req_get_profissional_id",
+      "parentId": "fld_profissionais",
+      "name": "GET - Buscar profissional por ID",
+      "url": "http://localhost:8080/api/profissionais/1",
+      "method": "GET",
+      "_type": "request"
+    },
+    {
+      "_id": "req_post_profissional",
+      "parentId": "fld_profissionais",
+      "name": "POST - Criar profissional",
+      "url": "http://localhost:8080/api/profissionais",
+      "method": "POST",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Dr. João Mendes\",\n  \"email\": \"joao.mendes@psicologia.com\",\n  \"especialidade\": \"Psicologia Clínica\"\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_put_profissional",
+      "parentId": "fld_profissionais",
+      "name": "PUT - Atualizar profissional",
+      "url": "http://localhost:8080/api/profissionais/1",
+      "method": "PUT",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Dra. Juliana Mendes\",\n  \"email\": \"juliana.mendes@psicologia.com\",\n  \"especialidade\": \"Psicanálise\"\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_delete_profissional",
+      "parentId": "fld_profissionais",
+      "name": "DELETE - Remover profissional",
+      "url": "http://localhost:8080/api/profissionais/1",
+      "method": "DELETE",
+      "_type": "request"
+    },
+
+    {
+      "_id": "fld_consultas",
+      "parentId": "wrk_mentalmonitoringapi_v2",
+      "name": "Consultas",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_get_consultas",
+      "parentId": "fld_consultas",
+      "name": "GET - Listar consultas",
+      "url": "http://localhost:8080/api/consultas",
+      "method": "GET",
+      "_type": "request"
+    },
+    {
+      "_id": "req_get_consulta_id",
+      "parentId": "fld_consultas",
+      "name": "GET - Buscar consulta por ID",
+      "url": "http://localhost:8080/api/consultas/1",
+      "method": "GET",
+      "_type": "request"
+    },
+    {
+      "_id": "req_post_consulta",
+      "parentId": "fld_consultas",
+      "name": "POST - Criar consulta",
+      "url": "http://localhost:8080/api/consultas",
+      "method": "POST",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"dataHora\": \"2025-11-20T15:00:00\",\n  \"status\": \"AGENDADA\",\n  \"observacao\": \"Sessão inicial de avaliação psicológica\",\n  \"pacienteId\": 1,\n  \"profissionalId\": 1\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_put_consulta",
+      "parentId": "fld_consultas",
+      "name": "PUT - Atualizar consulta",
+      "url": "http://localhost:8080/api/consultas/1",
+      "method": "PUT",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"dataHora\": \"2025-12-01T09:00:00\",\n  \"status\": \"CONCLUIDA\",\n  \"observacao\": \"Sessão final de acompanhamento\",\n  \"pacienteId\": 1,\n  \"profissionalId\": 1\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_delete_consulta",
+      "parentId": "fld_consultas",
+      "name": "DELETE - Remover consulta",
+      "url": "http://localhost:8080/api/consultas/1",
+      "method": "DELETE",
+      "_type": "request"
+    },
+
+    {
+      "_id": "fld_recursos",
+      "parentId": "wrk_mentalmonitoringapi_v2",
+      "name": "Recursos de Apoio",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_get_recursos",
+      "parentId": "fld_recursos",
+      "name": "GET - Listar recursos",
+      "url": "http://localhost:8080/api/recursos",
+      "method": "GET",
+      "_type": "request"
+    },
+    {
+      "_id": "req_get_recurso_id",
+      "parentId": "fld_recursos",
+      "name": "GET - Buscar recurso por ID",
+      "url": "http://localhost:8080/api/recursos/1",
+      "method": "GET",
+      "_type": "request"
+    },
+    {
+      "_id": "req_post_recurso",
+      "parentId": "fld_recursos",
+      "name": "POST - Criar recurso",
+      "url": "http://localhost:8080/api/recursos",
+      "method": "POST",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"titulo\": \"Como lidar com ansiedade\",\n  \"tipo\": \"Artigo\",\n  \"link\": \"https://saudemental.com/ansiedade\",\n  \"descricao\": \"Artigo com técnicas práticas de respiração e foco.\"\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_put_recurso",
+      "parentId": "fld_recursos",
+      "name": "PUT - Atualizar recurso",
+      "url": "http://localhost:8080/api/recursos/1",
+      "method": "PUT",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"titulo\": \"Como lidar com a ansiedade no dia a dia\",\n  \"tipo\": \"Artigo\",\n  \"link\": \"https://saudemental.com/ansiedade-diaria\",\n  \"descricao\": \"Versão atualizada com novos exercícios de respiração.\"\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_delete_recurso",
+      "parentId": "fld_recursos",
+      "name": "DELETE - Remover recurso",
+      "url": "http://localhost:8080/api/recursos/1",
+      "method": "DELETE",
+      "_type": "request"
+    }
+  ]
+}
