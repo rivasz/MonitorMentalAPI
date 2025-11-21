@@ -170,8 +170,8 @@ POST /api/recursos
   "descricao": "Artigo com técnicas práticas de respiração e foco."
 }
 
-🌱 ODS Relacionado
-ODS 3 – Saúde e Bem-Estar
+🧑‍🎓 ODS Relacionado
+ODS 8 - Trabalho Decente e Crescimento Econômico
 
     Garantir o acesso à saúde de qualidade e promover o bem-estar para todos, em todas as idades.
 
